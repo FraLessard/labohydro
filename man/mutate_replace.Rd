@@ -22,5 +22,5 @@ a dataframe with replaced values inside the column
 mutate_replace
 }
 \examples{
-no example
+# no example
 }

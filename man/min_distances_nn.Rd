@@ -7,7 +7,7 @@
 min_distances_nn(sf_object)
 }
 \arguments{
-\item{sf_object}{}
+\item{sf_object}{an sf object}
 }
 \value{
 distance between an sf object and the closet one
@@ -16,5 +16,5 @@ distance between an sf object and the closet one
 min_distances_nn
 }
 \examples{
-no example
+# no example
 }

@@ -18,5 +18,5 @@ burned dem
 burn_dem
 }
 \examples{
-no example
+# no example
 }

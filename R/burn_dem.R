@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 burn_dem <- function(dem, vect_sf) {
 
   # ------------------------------------------------------------

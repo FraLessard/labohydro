@@ -27,5 +27,5 @@ a dem with depressions breached
 breach_depression
 }
 \examples{
-no example
+# no example
 }

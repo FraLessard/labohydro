@@ -33,5 +33,5 @@ stream network
 stream_network
 }
 \examples{
-no example
+# no example
 }

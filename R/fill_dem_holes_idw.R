@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 fill_dem_holes_idw <- function(dem,
                                output,
                                working_directory = getwd(),
@@ -38,7 +38,7 @@ fill_dem_holes_idw <- function(dem,
 
   # Connected components (void regions)
   patches <- terra::patches(na_mask, directions = 8)
-  vals <- values(patches)
+  vals <- terra::values(patches)
 
   region_ids <- sort(unique(vals))
   region_ids <- region_ids[!is.na(region_ids)]
@@ -78,7 +78,7 @@ fill_dem_holes_idw <- function(dem,
   }
 
   # If no internal voids → return the input DEM unchanged
-  if (all(values(inner_mask) == 0, na.rm = TRUE)) {
+  if (all(terra::values(inner_mask) == 0, na.rm = TRUE)) {
     message("No internal voids detected.")
     terra::writeRaster(dem, output, overwrite = TRUE)
     setwd(original_wd)

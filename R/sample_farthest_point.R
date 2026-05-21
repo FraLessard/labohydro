@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 sample_farthest_point <- function(nb,
                                   res,
                                   sampling_area,
@@ -44,7 +44,7 @@ sample_farthest_point <- function(nb,
   # ------------------------------------------------------------
   set.seed(seed)
 
-  pt <- st_sample(sampling_area, 1, type = "random")
+  pt <- sf::st_sample(sampling_area, 1, type = "random")
 
   # ------------------------------------------------------------
   # 4. Iteratively select farthest points
@@ -58,25 +58,25 @@ sample_farthest_point <- function(nb,
     dist_raster_masked <- terra::mask(dist_raster, sampling_area)
 
     # Plot results
-    plot(dist_raster_masked)
-    plot(pt, add = T, col = "red", pch = 16)
+    terra::plot(dist_raster_masked)
+    sf::plot(pt, add = T, col = "red", pch = 16)
 
     # Locate farthest cell location within raster
-    max_cell <- which.max(values(dist_raster_masked))
-    farthest_cell <- rast(dist_raster_masked)
-    values(farthest_cell) <- NA
-    values(farthest_cell)[max_cell] <- 1
+    max_cell <- which.max(terra::values(dist_raster_masked))
+    farthest_cell <- terra::rast(dist_raster_masked)
+    terra::values(farthest_cell) <- NA
+    terra::values(farthest_cell)[max_cell] <- 1
 
     # Randomly sample one point inside this cell
     farthest_cell_poly <- terra::as.polygons(farthest_cell)
     farthest_cell_poly <- sf::st_as_sf(farthest_cell_poly)
     set.seed(seed)
-    new_pt <- st_sample(farthest_cell_poly, 1, type = "random")
+    new_pt <- sf::st_sample(farthest_cell_poly, 1, type = "random")
 
     # Plot results
-    plot(new_pt, add = T, col = "blue", pch = 16)
+    sf::plot(new_pt, add = T, col = "blue", pch = 16)
 
-    pt <- c(pt, new_pt)
+    pt <- dplyr::bind_rows(pt, new_pt)
 
   }
 

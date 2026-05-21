@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 flow_acc_md8_iteration <- function(input,
                                    quantiles = c(0.05, 0.10, 0.25, 0.50, 0.75, 0.90, 0.95),
                                    error = 0.16,

@@ -20,5 +20,5 @@ Topographic position index from Weiss poster
 Topographic position index from Weiss poster : https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf
 }
 \examples{
-no example
+# no example
 }

@@ -22,5 +22,5 @@ path of downloaded raster
 download_lidar_raster
 }
 \examples{
-no example
+# no example
 }

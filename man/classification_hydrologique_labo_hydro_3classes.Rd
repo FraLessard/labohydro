@@ -16,5 +16,5 @@ hydrological classification
 classification_hydrologique_labo_hydro_3classes
 }
 \examples{
-no example
+# no example
 }

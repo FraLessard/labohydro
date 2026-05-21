@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 mutate_replace <- function(x,
                            col_name,
                            old_value,

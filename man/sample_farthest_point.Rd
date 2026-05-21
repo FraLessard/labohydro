@@ -22,5 +22,5 @@ nb number of point placed as far apart from each other as possible
 sample_farthest_point
 }
 \examples{
-no example
+# no example
 }

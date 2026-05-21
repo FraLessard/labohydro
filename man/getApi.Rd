@@ -22,5 +22,5 @@ Api
 getApi
 }
 \examples{
-no example
+# no example
 }

@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 crop_mask <- function(raster,
                       polygon,
                       transform = TRUE,

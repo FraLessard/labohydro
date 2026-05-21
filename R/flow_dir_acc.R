@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 flow_dir_acc <- function(input,
                          output = "flow_acc.tif",
                          working_directory = getwd(),

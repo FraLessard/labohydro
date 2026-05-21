@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 topographic_wetness_index <- function(drainage_area,
                                       slope,
                                       drainage_area_weight = 1,

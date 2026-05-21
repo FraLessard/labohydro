@@ -30,5 +30,5 @@ a dem with no data filled
 fill_dem_holes_idw
 }
 \examples{
-no example
+# no example
 }

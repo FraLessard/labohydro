@@ -8,14 +8,14 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 bootstrap_cart_performance <- function(bootstrap_list, class) {
 
   # ------------------------------------------------------------
   # 1. Wrapper pour prédictions
   # ------------------------------------------------------------
   pred_wrapper <- function(object, newdata) {
-    predict(object, newdata, type = "class")
+    terra::predict(object, newdata, type = "class")
   }
 
   # ------------------------------------------------------------
@@ -36,13 +36,13 @@ bootstrap_cart_performance <- function(bootstrap_list, class) {
     # ------------------------------------------------------------
     # 3.1 Prédictions CART
     # ------------------------------------------------------------
-    pred <- predict(mod, test, type = "class")
+    pred <- terra::predict(mod, test, type = "class")
     ref  <- test[[class]]
 
     # ------------------------------------------------------------
     # 3.2 Matrice de confusion
     # ------------------------------------------------------------
-    scores <- confusionMatrix(data = pred, reference = ref)
+    scores <- caret::confusionMatrix(data = pred, reference = ref)
 
     # Extraire byClass (acc, sens, spec)
     byclass <- scores$byClass[, c(1, 2, 11), drop = FALSE]
@@ -62,7 +62,7 @@ bootstrap_cart_performance <- function(bootstrap_list, class) {
     # ------------------------------------------------------------
     # 3.3 Importance des variables via {vip}
     # ------------------------------------------------------------
-    vi_res <- vi(
+    vi_res <- vip::vi(
       mod,
       method = "permute",
       train  = test,

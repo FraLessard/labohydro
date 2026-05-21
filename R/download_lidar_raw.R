@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 download_lidar_raw <- function(index,
                                tile,
                                destination = getwd()) {

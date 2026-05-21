@@ -10,13 +10,13 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 display_pca <- function(data,
                         color_variable,
                         point_size,
                         label_size){
   data |>
-    dplyr::select(-!!sym(color_variable)) |>
+    dplyr::select(-!!dplyr::sym(color_variable)) |>
     stats::prcomp(scale = TRUE) -> pca
 
   tidyterra::autoplot(pca,

@@ -16,5 +16,5 @@ a matrix of circle focal window
 circle_focal_window
 }
 \examples{
-no example
+# no example
 }

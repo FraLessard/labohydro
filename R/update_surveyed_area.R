@@ -9,19 +9,19 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 update_surveyed_area <- function(surveyed_area,
                                  update_area,
                                  task){
 
   update_area |>
-    sf::st_transform(st_crs(surveyed_area)) |>
+    sf::st_transform(sf::st_crs(surveyed_area)) |>
     sf::st_as_sf() -> update_area_crs
 
   surveyed_area_temp <- surveyed_area
 
   if(task == "add"){
-  values(surveyed_area_temp) <- 1
+    terra::values(surveyed_area_temp) <- 1
 
   surveyed_area_temp |>
     terra::mask(update_area_crs) -> surveyed_area_temp
@@ -33,7 +33,7 @@ update_surveyed_area <- function(surveyed_area,
   }
 
   if(task == "remove"){
-    values(surveyed_area_temp) <- 0
+    terra::values(surveyed_area_temp) <- 0
 
     surveyed_area_temp |>
       terra::mask(update_area_crs) -> surveyed_area_temp

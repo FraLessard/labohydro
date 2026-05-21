@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 extract_stream_head <- function(channel,
                                 stream_field,
                                 stream_class,
@@ -20,7 +20,7 @@ extract_stream_head <- function(channel,
 
   stream_channel <- channel[channel[[stream_field]] == stream_class,]
 
-  stream_head <- bind_rows(sf::st_as_sf(lwgeom::st_startpoint(stream_channel)),
+  stream_head <- dplyr::bind_rows(sf::st_as_sf(lwgeom::st_startpoint(stream_channel)),
                             sf::st_as_sf(lwgeom::st_endpoint(stream_channel)))
 
   # Remove stream head that touche two stream channel

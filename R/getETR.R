@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 getETR <- function(ETP,
                    rain){
 

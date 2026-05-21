@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 annulus_focal_window <- function(inner_radius,
                                  outer_radius){
   # Define the radius of the focal window (it must cover the outer radius)

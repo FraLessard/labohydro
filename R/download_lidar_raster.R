@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 download_lidar_raster <- function(index,
                                   tile,
                                   raster = "MNT", # Choose one : "MHC", "MNT", "MNT_Ombre", "Pentes"

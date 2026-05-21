@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 modify_slope <- function(slope,
                          slope_weight,
                          suction){

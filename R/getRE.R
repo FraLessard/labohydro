@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 getRE <- function(date,
                   latitude) {
 

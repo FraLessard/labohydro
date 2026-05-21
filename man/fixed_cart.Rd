@@ -24,5 +24,5 @@ a cart model with fixed parameters
 fixed_cart
 }
 \examples{
-no example
+# no example
 }

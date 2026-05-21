@@ -18,5 +18,5 @@ a matrix of annulus focal window
 annulus_focal_window
 }
 \examples{
-no example
+# no example
 }

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 random_raster <- function(raster,
                           error,
                           seed = 1){

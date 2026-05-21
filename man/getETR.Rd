@@ -18,5 +18,5 @@ ETR
 getETR
 }
 \examples{
-no example
+# no example
 }

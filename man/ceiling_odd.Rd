@@ -16,5 +16,5 @@ ceiling_odd
 ceiling_odd
 }
 \examples{
-no example
+# no example
 }

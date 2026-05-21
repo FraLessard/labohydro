@@ -20,5 +20,5 @@ channel head
 extract_channel_head
 }
 \examples{
-no example
+# no example
 }

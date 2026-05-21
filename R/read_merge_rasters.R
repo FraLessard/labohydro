@@ -8,16 +8,17 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 read_merge_rasters <- function(path = getwd(),
                                pattern){
 
-  list.files(path = path,
-             pattern = "\\.tif$",
-             full.names = T) |>
-    stringr::str_subset(pattern) |>
-    map(terra::rast) %>%
-    terra::rast -> rasters
+  files <- list.files(path = path,
+                      pattern = "\\.tif$",
+                      full.names = T)
+  files <- stringr::str_subset(files, pattern)
+
+  rasters <- purrr::map(files, terra::rast)
+  rasters <- terra::rast
 
   return(rasters)
 }

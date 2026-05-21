@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 circle_focal_window <- function(radius){
   # Define the radius of the focal window (it must cover the outer radius)
   window_radius <- radius * 2 + 1  # total window radius is twice the outer radius + 1

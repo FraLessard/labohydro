@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 assign_date <- function(x,
                         y,
                         date_col){

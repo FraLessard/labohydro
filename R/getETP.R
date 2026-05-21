@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 getETP <- function(tmin,
                    tmax,
                    ATnor,

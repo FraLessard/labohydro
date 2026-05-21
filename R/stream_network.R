@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 stream_network <- function(facc,
                            fdir,
                            output,

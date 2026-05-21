@@ -24,5 +24,5 @@ Landform from Weiss poster
 Landform from Weiss poster : https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf
 }
 \examples{
-no example
+# no example
 }

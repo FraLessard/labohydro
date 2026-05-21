@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 breach_depression <- function(input,
                               output,
                               working_directory = getwd(),

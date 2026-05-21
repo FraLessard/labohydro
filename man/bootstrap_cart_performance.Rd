@@ -18,5 +18,5 @@ bootstrap performance table
 bootstrap_cart_performance
 }
 \examples{
-no example
+# no example
 }

@@ -20,5 +20,5 @@ path of downloaded lidar data
 download_lidar_raw
 }
 \examples{
-no example
+# no example
 }

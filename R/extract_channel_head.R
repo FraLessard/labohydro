@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 extract_channel_head <- function(channel,
                                  surveyed_area,
                                  tolerance){

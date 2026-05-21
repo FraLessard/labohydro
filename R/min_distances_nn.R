@@ -1,13 +1,13 @@
 #' min_distances_nn
 #'
-#' @param sf_object
+#' @param sf_object an sf object
 #'
 #' @returns
 #' distance between an sf object and the closet one
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 min_distances_nn <- function(sf_object) {
   # k = 2 because the first neighbor returned is the feature itself
   nn <- nngeo::st_nn(sf_object, sf_object, k = 2)

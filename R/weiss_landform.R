@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 weiss_landform <- function(tpi300,
                            tpi2000,
                            scale_tpi300 = 100,

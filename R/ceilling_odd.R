@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 ceiling_odd <- function(x) {
   # Apply ceiling to the value
   xc <- ceiling(x)

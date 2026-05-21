@@ -30,5 +30,5 @@ stream head
 extract_stream_head
 }
 \examples{
-no example
+# no example
 }

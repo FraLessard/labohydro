@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_labo_hydro_3classes_ecofor <- function(x, # Depots de surface de la cartographie écoforestière
                                                                    y){ # Code de terrain de la cartographie écoforestière
 
@@ -45,7 +45,7 @@ classification_hydrologique_labo_hydro_3classes_ecofor <- function(x, # Depots d
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_labo_hydro_3classes <- function(x){ # Depots de surface du MELCCFP
 
   classification_hydrologique <- c("0" = "Dépôts glaciaires",
@@ -153,7 +153,7 @@ classification_hydrologique_labo_hydro_3classes <- function(x){ # Depots de surf
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_labo_hydro_4classes <- function(x){ # Depots de surface du MELCCFP
 
   classification_hydrologique <- c("0" = "Tills et affleurements",
@@ -261,7 +261,7 @@ classification_hydrologique_labo_hydro_4classes <- function(x){ # Depots de surf
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_radf <- function(x){ # Depots de surface du MELCCFP
 
   classification_hydrologique <- c("0" = "CD", # R
@@ -369,7 +369,7 @@ classification_hydrologique_radf <- function(x){ # Depots de surface du MELCCFP
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_mailhot_2018 <- function(x){ # Depots de surface du MELCCFP
 
   classification_hydrologique <- c("0" = "ROC", # R
@@ -478,7 +478,7 @@ classification_hydrologique_mailhot_2018 <- function(x){ # Depots de surface du 
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_simplify_v1 <- function(x){ # Depots de surface du MELCCFP
 
   classification_hydrologique <- c("0" = "Affleurement rocheux",
@@ -587,7 +587,7 @@ classification_hydrologique_simplify_v1 <- function(x){ # Depots de surface du M
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 classification_hydrologique_simplify_v2 <- function(x){ # Depots de surface du MELCCFP
 
   classification_hydrologique <- c("0" = "Affleurement rocheux",

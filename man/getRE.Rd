@@ -18,5 +18,5 @@ RE
 getRE
 }
 \examples{
-no example
+# no example
 }

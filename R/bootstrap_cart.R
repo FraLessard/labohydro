@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 bootstrap_cart <- function(formula,
                            data,
                            nbagg,

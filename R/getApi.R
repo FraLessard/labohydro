@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 getApi <- function(x,
                    k = 0.9,
                    n = 5,

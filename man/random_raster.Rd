@@ -20,5 +20,5 @@ a random raster
 random_raster
 }
 \examples{
-no example
+# no example
 }

@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 fixed_cart <- function(formula,
                        data,
                        MD,  # Maximum tree depth

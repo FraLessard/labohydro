@@ -18,5 +18,5 @@ modified flow accumulation
 modify_acc
 }
 \examples{
-no example
+# no example
 }

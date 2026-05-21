@@ -20,5 +20,5 @@ compute the "new_date" column with a "date_distance" column
 assign_date
 }
 \examples{
-no example
+# no example
 }

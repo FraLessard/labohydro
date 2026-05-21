@@ -27,5 +27,5 @@ flow dir and acc
 flow_dir_acc
 }
 \examples{
-no example
+# no example
 }

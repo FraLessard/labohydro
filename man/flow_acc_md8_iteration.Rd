@@ -30,5 +30,5 @@ a spatraster with multiple layers of flow accumulation distribution
 flow_acc_md8_iteration
 }
 \examples{
-no example
+# no example
 }

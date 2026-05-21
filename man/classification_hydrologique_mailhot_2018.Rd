@@ -16,5 +16,5 @@ hydrological classification
 classification_hydrologique_mailhot_2018
 }
 \examples{
-no example
+# no example
 }

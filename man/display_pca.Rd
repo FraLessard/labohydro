@@ -22,5 +22,5 @@ a nice and clean pca
 display_pca
 }
 \examples{
-no example
+# no example
 }

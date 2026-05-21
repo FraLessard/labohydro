@@ -22,5 +22,5 @@ a raster with extent and mask of polygon
 crop_mask
 }
 \examples{
-no example
+# no example
 }

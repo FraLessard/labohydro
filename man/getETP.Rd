@@ -22,5 +22,5 @@ ETP
 getETP
 }
 \examples{
-no example
+# no example
 }

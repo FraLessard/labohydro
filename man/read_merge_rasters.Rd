@@ -18,5 +18,5 @@ a mutilayer spatraster
 read_merge_rasters
 }
 \examples{
-no example
+# no example
 }

@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' no example
+#' # no example
 watershed <- function(facc,
                       fdir,
                       pour_point,

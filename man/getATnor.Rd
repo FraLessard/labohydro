@@ -13,7 +13,7 @@ getATnor(date, tmin, tmax, years = 30)
 
 \item{tmax}{tmax}
 
-\item{years}{}
+\item{years}{year}
 }
 \value{
 ATnor
@@ -22,5 +22,5 @@ ATnor
 getATnor
 }
 \examples{
-no example
+# no example
 }
