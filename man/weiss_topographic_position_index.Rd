@@ -4,7 +4,7 @@
 \alias{weiss_topographic_position_index}
 \title{Topographic position index from Weiss poster : https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf}
 \usage{
-weiss_topographic_position_index(dem, inner_radius, outer_radius)
+weiss_topographic_position_index(dem, inner_radius, outer_radius, round = TRUE)
 }
 \arguments{
 \item{dem}{digital elevation model}
