@@ -12,7 +12,8 @@
 #' # no example
 weiss_topographic_position_index <- function(dem,
                                              inner_radius,
-                                             outer_radius){
+                                             outer_radius,
+                                             round = TRUE){
 
   # Get the resolution of the DEM (cell size in meters)
   resolution <- terra::res(dem)[1]  # assuming square cells
@@ -23,7 +24,7 @@ weiss_topographic_position_index <- function(dem,
 
   # Apply focal mean with the donut-shaped window
   focal_mean <- terra::focal(dem,
-                             w = annulus_focal_windows(inner_size, outer_size),
+                             w = annulus_focal_window(inner_size, outer_size),
                              fun = "mean",
                              na.policy = 'omit')
 
@@ -31,7 +32,9 @@ weiss_topographic_position_index <- function(dem,
   tpi <- dem - focal_mean + 0.5
 
   # Apply rounding to integer
-  tpi_int <- round(tpi)
+  if(round == TRUE){
+    tpi <- round(tpi)
+  }
 
-  return(tpi_int)
+  return(tpi)
 }

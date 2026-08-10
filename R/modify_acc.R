@@ -20,7 +20,7 @@ modify_acc <- function(facc,
 
     iteration <- iteration + 1
 
-    terra::plot(facc)
+    # terra::plot(facc) # Juste necessaire pour la validation que tout es ok
 
     # Permet d'aller chercher pour chaque cellule l'accumulation de flux max voisine
     facc_max <- terra::focal(facc, w = 3, fun = "max", na.rm = TRUE, na.policy = "omit", expand = TRUE)
@@ -29,7 +29,7 @@ modify_acc <- function(facc,
     facc_max_mod <- facc_max*m_slope
 
     # Selectionne l'accumulation de flux max entre celle originale et celle multipliee par la pente modifiee
-    facc_mod <- terra::c(facc, facc_max_mod)
+    facc_mod <- c(facc, facc_max_mod)
     facc_mod <- terra::app(facc_mod, "max")
 
     # Permet d'identifier les cellules ayant ete modifiee par la pente modifiee
