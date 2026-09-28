@@ -1,10 +1,10 @@
 #' extract_stream_head
 #'
-#' @param channel channels
-#' @param stream_field stream field
-#' @param stream_class stream class
-#' @param surveyed_area surveyed area
-#' @param tolerance tolerance distance
+#' @param channel An `sf` object. Channel lines.
+#' @param stream_field Character. Name of the column holding the channel class.
+#' @param stream_class Value of `stream_field` identifying streams.
+#' @param surveyed_area An `sf` object. Surveyed area polygon.
+#' @param tolerance Numeric. Distance tolerance used to detect connected channels, in map units.
 #'
 #' @returns
 #' stream head

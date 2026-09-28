@@ -13,15 +13,15 @@ extract_stream_head(
 )
 }
 \arguments{
-\item{channel}{channels}
+\item{channel}{An \code{sf} object. Channel lines.}
 
-\item{stream_field}{stream field}
+\item{stream_field}{Character. Name of the column holding the channel class.}
 
-\item{stream_class}{stream class}
+\item{stream_class}{Value of \code{stream_field} identifying streams.}
 
-\item{surveyed_area}{surveyed area}
+\item{surveyed_area}{An \code{sf} object. Surveyed area polygon.}
 
-\item{tolerance}{tolerance distance}
+\item{tolerance}{Numeric. Distance tolerance used to detect connected channels, in map units.}
 }
 \value{
 stream head

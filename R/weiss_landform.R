@@ -1,10 +1,10 @@
 #' Landform from Weiss poster : https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf
 #'
-#' @param tpi300 topographic position index at 300 meters scale : annulus 150 m to 300 m / 30 m resolution 15 to 30 pixels
-#' @param tpi2000 topographic position index at 2000 meters scale : annulus 1860 m to 2010 m / 30 m resolution 62 to 67 pixels
-#' @param scale_tpi300 threshold for tpi at 300 meters scale
-#' @param scale_tpi2000 threshold for tpi at 2000 meters scale
-#' @param slope slope in degrees
+#' @param tpi300 A `SpatRaster`. Topographic position index at the 300 m scale (annulus of 150 m to 300 m, i.e. 15 to 30 cells at 30 m resolution).
+#' @param tpi2000 A `SpatRaster`. Topographic position index at the 2000 m scale (annulus of 1860 m to 2010 m, i.e. 62 to 67 cells at 30 m resolution).
+#' @param scale_tpi300 Numeric. Threshold applied to `tpi300`.
+#' @param scale_tpi2000 Numeric. Threshold applied to `tpi2000`.
+#' @param slope A `SpatRaster`. Slope, in degrees.
 #'
 #' @returns
 #' Landform from Weiss poster

@@ -7,13 +7,13 @@
 getApi(x, k = 0.9, n = 5, finite = TRUE)
 }
 \arguments{
-\item{x}{seq}
+\item{x}{Numeric vector. Daily precipitation series.}
 
-\item{k}{k}
+\item{k}{Numeric. Decay constant, or vector of weights.}
 
-\item{n}{number of data to use}
+\item{n}{Integer. Number of previous days used when \code{finite = TRUE}.}
 
-\item{finite}{TRUE/FALSE}
+\item{finite}{Logical. If \code{TRUE}, the index uses the last \code{n} days only; otherwise it is computed recursively over the whole series.}
 }
 \value{
 Api

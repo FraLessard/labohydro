@@ -7,9 +7,9 @@
 modify_acc(facc, m_slope)
 }
 \arguments{
-\item{facc}{facc}
+\item{facc}{A \code{SpatRaster}. Flow accumulation.}
 
-\item{m_slope}{m_slope}
+\item{m_slope}{A \code{SpatRaster}. Modified slope, from \code{\link[=modify_slope]{modify_slope()}}.}
 }
 \value{
 modified flow accumulation

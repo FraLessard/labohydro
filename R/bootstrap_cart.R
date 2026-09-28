@@ -1,11 +1,11 @@
 #' bootstrap_cart
 #'
-#' @param formula formula of cart model
-#' @param data data frame to train with
-#' @param nbagg number of iterations
-#' @param MD max depth of tree
-#' @param NB max number of branch of tree
-#' @param MS minimum data per split
+#' @param formula A `formula`. Formula of the CART model.
+#' @param data A `data.frame`. Data used to train the model.
+#' @param nbagg Integer. Number of bootstrap iterations.
+#' @param MD Integer. Maximum depth of the tree.
+#' @param NB Integer. Maximum number of splits of the tree.
+#' @param MS Integer. Minimum number of observations required to attempt a split.
 #'
 #' @returns
 #' a bootstrap list with tain/test data and model

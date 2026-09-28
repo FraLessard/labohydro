@@ -1,8 +1,8 @@
 #' random_raster
 #'
-#' @param raster reference raster
-#' @param error rmse of error to infer into raster
-#' @param seed seed for reproducibility
+#' @param raster A `SpatRaster`. Reference raster.
+#' @param error Numeric. RMSE of the random error.
+#' @param seed Integer. Random seed for reproducibility.
 #'
 #' @returns
 #' a random raster

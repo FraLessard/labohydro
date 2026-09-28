@@ -1,8 +1,8 @@
 #' download_lidar_raw
 #'
-#' @param index index in sf with download path : "file_url"
-#' @param tile tile number
-#' @param destination destination of lidar data
+#' @param index An `sf` object. Tile index with "NOM_TUILE" and "TELECHARGEMENT_TUILE" columns.
+#' @param tile Character. Tile name (e.g. "32B11NE").
+#' @param destination Character. Directory where the file is downloaded.
 #'
 #' @returns
 #' path of downloaded lidar data

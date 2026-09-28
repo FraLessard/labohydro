@@ -1,9 +1,9 @@
 #' crop_mask
 #'
-#' @param raster raster to clip
-#' @param polygon reference polygon
-#' @param transform transform crs of final raster TRUE/FALSE
-#' @param method transformation method : "bilinear" for numeric raster and "near" for categorical raster
+#' @param raster A `SpatRaster`. Raster to crop and mask.
+#' @param polygon An `sf` object. Polygon used to crop and mask `raster`.
+#' @param transform Logical. If `TRUE`, the output is projected to the CRS of `polygon`.
+#' @param method Character. Resampling method used when `transform = TRUE`: "bilinear" for continuous rasters or "near" for categorical rasters.
 #'
 #' @returns
 #' a raster with extent and mask of polygon

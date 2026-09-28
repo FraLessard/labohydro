@@ -1,10 +1,10 @@
 #' flow_acc_md8_iteration
 #'
-#' @param input path to digital elevation model with extension
-#' @param quantiles quantiles to computes
-#' @param error lidar error
-#' @param n_iter number of iterations
-#' @param working_directory working directory
+#' @param input Character. Path to the digital elevation model file (with extension).
+#' @param quantiles Numeric vector. Quantiles to compute, between 0 and 1.
+#' @param error Numeric. RMSE of the LiDAR elevation error, in meters.
+#' @param n_iter Integer vector. Iteration numbers at which a result raster is written.
+#' @param working_directory Character. Working directory where temporary files are written.
 #'
 #' @returns
 #' a spatraster with multiple layers of flow accumulation distribution

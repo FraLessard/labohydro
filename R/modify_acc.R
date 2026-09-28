@@ -1,7 +1,7 @@
 #' modify_acc
 #'
-#' @param facc facc
-#' @param m_slope m_slope
+#' @param facc A `SpatRaster`. Flow accumulation.
+#' @param m_slope A `SpatRaster`. Modified slope, from [modify_slope()].
 #'
 #' @returns
 #' modified flow accumulation

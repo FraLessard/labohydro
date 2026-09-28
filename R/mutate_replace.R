@@ -1,9 +1,9 @@
 #' mutate_replace
 #'
-#' @param x a dataframe
-#' @param col_name column name to replace value
-#' @param old_value old value
-#' @param new_value new value
+#' @param x A `data.frame`. Data in which values are replaced.
+#' @param col_name Column name (unquoted) in which values are replaced.
+#' @param old_value Vector. Values to replace.
+#' @param new_value Replacement value.
 #'
 #' @returns
 #' a dataframe with replaced values inside the column

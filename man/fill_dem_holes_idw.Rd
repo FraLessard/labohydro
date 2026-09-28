@@ -13,15 +13,15 @@ fill_dem_holes_idw(
 )
 }
 \arguments{
-\item{dem}{path to digital elevation model with extension}
+\item{dem}{A \code{SpatRaster}. Digital elevation model.}
 
-\item{output}{path to digital elevation model filled with extension}
+\item{output}{Character. Path to the filled digital elevation model file (with extension).}
 
-\item{working_directory}{working directory}
+\item{working_directory}{Character. Working directory where temporary files are written.}
 
-\item{idw_power}{idw power}
+\item{idw_power}{Numeric. Power of the inverse distance weighting.}
 
-\item{remove_temp}{remove temporary data : dem file}
+\item{remove_temp}{Logical. If \code{TRUE}, temporary files (dem_input_temp, inner_holes_mask, dem_inner_idw_fill_temp) are deleted.}
 }
 \value{
 a dem with no data filled

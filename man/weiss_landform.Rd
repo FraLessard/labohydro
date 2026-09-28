@@ -7,15 +7,15 @@
 weiss_landform(tpi300, tpi2000, scale_tpi300 = 100, scale_tpi2000 = 100, slope)
 }
 \arguments{
-\item{tpi300}{topographic position index at 300 meters scale : annulus 150 m to 300 m / 30 m resolution 15 to 30 pixels}
+\item{tpi300}{A \code{SpatRaster}. Topographic position index at the 300 m scale (annulus of 150 m to 300 m, i.e. 15 to 30 cells at 30 m resolution).}
 
-\item{tpi2000}{topographic position index at 2000 meters scale : annulus 1860 m to 2010 m / 30 m resolution 62 to 67 pixels}
+\item{tpi2000}{A \code{SpatRaster}. Topographic position index at the 2000 m scale (annulus of 1860 m to 2010 m, i.e. 62 to 67 cells at 30 m resolution).}
 
-\item{scale_tpi300}{threshold for tpi at 300 meters scale}
+\item{scale_tpi300}{Numeric. Threshold applied to \code{tpi300}.}
 
-\item{scale_tpi2000}{threshold for tpi at 2000 meters scale}
+\item{scale_tpi2000}{Numeric. Threshold applied to \code{tpi2000}.}
 
-\item{slope}{slope in degrees}
+\item{slope}{A \code{SpatRaster}. Slope, in degrees.}
 }
 \value{
 Landform from Weiss poster

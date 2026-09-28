@@ -7,9 +7,9 @@
 burn_dem(dem, vect_sf)
 }
 \arguments{
-\item{dem}{digital elevation model}
+\item{dem}{A \code{SpatRaster}. Digital elevation model.}
 
-\item{vect_sf}{vector to be burned into dem, usually culvert}
+\item{vect_sf}{An \code{sf} object. Line features to burn into \code{dem} (usually culverts).}
 }
 \value{
 burned dem

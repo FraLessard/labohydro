@@ -7,7 +7,7 @@
 min_distances_nn(sf_object)
 }
 \arguments{
-\item{sf_object}{an sf object}
+\item{sf_object}{An \code{sf} object. Features to compute distances between.}
 }
 \value{
 distance between an sf object and the closet one

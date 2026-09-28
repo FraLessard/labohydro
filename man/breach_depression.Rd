@@ -12,13 +12,13 @@ breach_depression(
 )
 }
 \arguments{
-\item{input}{path to digital elevation model with extension}
+\item{input}{Character. Path to the digital elevation model file (with extension).}
 
-\item{output}{path to digital elevation model breached with extension}
+\item{output}{Character. Path to the breached digital elevation model file (with extension).}
 
-\item{working_directory}{working directory}
+\item{working_directory}{Character. Working directory where temporary files are written.}
 
-\item{remove_temp}{remove temporary data : fill scp/breach scp/breach lc}
+\item{remove_temp}{Logical. If \code{TRUE}, temporary files (fill_scp, breach_scp, breach_lc) are deleted.}
 }
 \value{
 a dem with depressions breached

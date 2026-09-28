@@ -12,13 +12,13 @@ saga_run(
 )
 }
 \arguments{
-\item{library}{library of SAGA-GIS / ex : "ta_morphometry"}
+\item{library}{Character. SAGA-GIS library (e.g. "ta_morphometry").}
 
-\item{tool}{tool number / ex : "9"}
+\item{tool}{Character. Tool number in the library (e.g. "9").}
 
-\item{...}{arguments / ex : "-DEM", paste0(wd, "/dem_filtered_breached_crop.sgrd"),}
+\item{...}{Character. Tool arguments (e.g. "-DEM", "dem.sgrd").}
 
-\item{saga_cmd}{SAGA-GIS path}
+\item{saga_cmd}{Character. Path to the SAGA-GIS command-line executable.}
 }
 \value{
 tool ouput

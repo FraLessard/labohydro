@@ -7,17 +7,17 @@
 bootstrap_cart(formula, data, nbagg, MD, NB, MS)
 }
 \arguments{
-\item{formula}{formula of cart model}
+\item{formula}{A \code{formula}. Formula of the CART model.}
 
-\item{data}{data frame to train with}
+\item{data}{A \code{data.frame}. Data used to train the model.}
 
-\item{nbagg}{number of iterations}
+\item{nbagg}{Integer. Number of bootstrap iterations.}
 
-\item{MD}{max depth of tree}
+\item{MD}{Integer. Maximum depth of the tree.}
 
-\item{NB}{max number of branch of tree}
+\item{NB}{Integer. Maximum number of splits of the tree.}
 
-\item{MS}{minimum data per split}
+\item{MS}{Integer. Minimum number of observations required to attempt a split.}
 }
 \value{
 a bootstrap list with tain/test data and model

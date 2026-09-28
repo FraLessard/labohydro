@@ -7,9 +7,9 @@
 classification_hydrologique_labo_hydro_3classes_ecofor(x, y)
 }
 \arguments{
-\item{x}{DEP_SUR column of ecoforestry}
+\item{x}{Character vector. Surface deposit codes (DEP_SUR column) from the ecoforestry map.}
 
-\item{y}{CO_TER column of ecoforestry}
+\item{y}{Character vector. Terrain codes (CO_TER column) from the ecoforestry map.}
 }
 \value{
 hydrological classification

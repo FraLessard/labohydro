@@ -1,6 +1,6 @@
 #' ceiling_odd
 #'
-#' @param x a number
+#' @param x Numeric. Value to round up to the nearest odd integer.
 #'
 #' @returns
 #' ceiling_odd

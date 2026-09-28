@@ -13,15 +13,15 @@ flow_acc_md8_iteration(
 )
 }
 \arguments{
-\item{input}{path to digital elevation model with extension}
+\item{input}{Character. Path to the digital elevation model file (with extension).}
 
-\item{quantiles}{quantiles to computes}
+\item{quantiles}{Numeric vector. Quantiles to compute, between 0 and 1.}
 
-\item{error}{lidar error}
+\item{error}{Numeric. RMSE of the LiDAR elevation error, in meters.}
 
-\item{n_iter}{number of iterations}
+\item{n_iter}{Integer vector. Iteration numbers at which a result raster is written.}
 
-\item{working_directory}{working directory}
+\item{working_directory}{Character. Working directory where temporary files are written.}
 }
 \value{
 a spatraster with multiple layers of flow accumulation distribution

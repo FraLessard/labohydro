@@ -1,7 +1,7 @@
 #' getETR
 #'
-#' @param ETP ETP
-#' @param rain rain
+#' @param ETP Numeric vector. Daily potential evapotranspiration, from [getETP()].
+#' @param rain Numeric vector. Daily rainfall, in mm.
 #'
 #' @returns
 #' ETR

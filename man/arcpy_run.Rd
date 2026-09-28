@@ -11,11 +11,11 @@ arcpy_run(
 )
 }
 \arguments{
-\item{script}{path of script}
+\item{script}{Character. Path to the Python script to run.}
 
-\item{...}{arguments}
+\item{...}{Character. Arguments passed to the script.}
 
-\item{python_exe}{arcpy path}
+\item{python_exe}{Character. Path to the ArcGIS Pro Python executable.}
 }
 \value{
 tool output

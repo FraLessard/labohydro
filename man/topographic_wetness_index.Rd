@@ -12,13 +12,13 @@ topographic_wetness_index(
 )
 }
 \arguments{
-\item{drainage_area}{drainage area defined usyally by flow accumulation}
+\item{drainage_area}{A \code{SpatRaster}. Drainage area, usually from flow accumulation.}
 
-\item{slope}{slope}
+\item{slope}{A \code{SpatRaster}. Slope, in radians.}
 
-\item{drainage_area_weight}{weight of drainage area}
+\item{drainage_area_weight}{Numeric. Weight of the drainage area.}
 
-\item{slope_weight}{weight of slope}
+\item{slope_weight}{Numeric. Weight of the slope.}
 }
 \value{
 topographic wetness index

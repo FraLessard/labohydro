@@ -1,7 +1,7 @@
 #' read_merge_rasters
 #'
-#' @param path path to rasters
-#' @param pattern pattern of rasters to merge
+#' @param path Character. Directory containing the rasters.
+#' @param pattern Character. Regular expression used to select the rasters to merge.
 #'
 #' @returns
 #' a mutilayer spatraster

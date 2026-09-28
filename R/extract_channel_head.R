@@ -1,8 +1,8 @@
 #' extract_channel_head
 #'
-#' @param channel channels
-#' @param surveyed_area surveyed area
-#' @param tolerance tolerance distance
+#' @param channel An `sf` object. Channel lines.
+#' @param surveyed_area An `sf` object. Surveyed area polygon.
+#' @param tolerance Numeric. Distance tolerance used to detect connected channels, in map units.
 #'
 #' @returns
 #' channel head

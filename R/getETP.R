@@ -1,9 +1,9 @@
 #' getETP
 #'
-#' @param tmin tmin
-#' @param tmax tmax
-#' @param ATnor ATnor
-#' @param RE RE
+#' @param tmin Numeric vector. Daily minimum temperature, in °C.
+#' @param tmax Numeric vector. Daily maximum temperature, in °C.
+#' @param ATnor Numeric vector. Normal daily temperature range, from [getATnor()].
+#' @param RE Numeric vector. Extraterrestrial radiation, from [getRE()].
 #'
 #' @returns
 #' ETP

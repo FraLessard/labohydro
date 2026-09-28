@@ -1,9 +1,9 @@
 #' topographic_wetness_index
 #'
-#' @param drainage_area drainage area defined usyally by flow accumulation
-#' @param slope slope
-#' @param drainage_area_weight weight of drainage area
-#' @param slope_weight weight of slope
+#' @param drainage_area A `SpatRaster`. Drainage area, usually from flow accumulation.
+#' @param slope A `SpatRaster`. Slope, in radians.
+#' @param drainage_area_weight Numeric. Weight of the drainage area.
+#' @param slope_weight Numeric. Weight of the slope.
 #'
 #' @returns
 #' topographic wetness index

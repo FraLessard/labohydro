@@ -1,8 +1,8 @@
 #' modify_slope
 #'
-#' @param slope slope
-#' @param slope_weight slope weight
-#' @param suction suction
+#' @param slope A `SpatRaster`. Slope.
+#' @param slope_weight Numeric. Weight of the slope.
+#' @param suction Numeric. Suction parameter.
 #'
 #' @returns
 #' modified slope to modify flow accumulation

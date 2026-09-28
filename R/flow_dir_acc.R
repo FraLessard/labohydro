@@ -1,9 +1,9 @@
 #' flow_dir_acc
 #'
-#' @param input path to digital elevation model with extension
-#' @param output path to flow accumulation with extension
-#' @param working_directory working directory
-#' @param remove_flowdir remove flow dir
+#' @param input Character. Path to the digital elevation model file (with extension).
+#' @param output Character. Path to the flow accumulation file (with extension).
+#' @param working_directory Character. Working directory where temporary files are written.
+#' @param remove_flowdir Logical. If `TRUE`, the flow direction file (flow_dir) is deleted.
 #'
 #' @returns
 #' flow dir and acc

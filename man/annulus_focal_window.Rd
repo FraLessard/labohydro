@@ -7,9 +7,9 @@
 annulus_focal_window(inner_radius, outer_radius)
 }
 \arguments{
-\item{inner_radius}{inner radius of annulus in number of cells}
+\item{inner_radius}{Numeric. Inner radius of the annulus, in number of cells.}
 
-\item{outer_radius}{outer radius of annulus in number of cells}
+\item{outer_radius}{Numeric. Outer radius of the annulus, in number of cells.}
 }
 \value{
 a matrix of annulus focal window

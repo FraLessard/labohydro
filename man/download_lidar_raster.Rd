@@ -7,13 +7,13 @@
 download_lidar_raster(index, tile, raster = "MNT", destination = getwd())
 }
 \arguments{
-\item{index}{index in sf with download path : "lidar_url"}
+\item{index}{An \code{sf} object. Tile index with "feuillet" and "lidar_url" columns.}
 
-\item{tile}{tile number}
+\item{tile}{Character. Tile name (e.g. "32B11NE").}
 
-\item{raster}{raster product : "MHC", "MNT", "MNT_Ombre", "Pentes"}
+\item{raster}{Character. Raster product: "MHC", "MNT", "MNT_Ombre" or "Pentes".}
 
-\item{destination}{destination of raster}
+\item{destination}{Character. Directory where the file is downloaded.}
 }
 \value{
 path of downloaded raster

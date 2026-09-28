@@ -7,11 +7,11 @@
 assign_date(x, y, date_col)
 }
 \arguments{
-\item{x}{spatial data to complete date}
+\item{x}{An \code{sf} object. Features to which a date is assigned.}
 
-\item{y}{nearest spatial data to get date}
+\item{y}{An \code{sf} object. Features with known dates, from which the nearest date is taken.}
 
-\item{date_col}{date column}
+\item{date_col}{Character. Name of the date column in \code{y}.}
 }
 \value{
 compute the "new_date" column with a "date_distance" column

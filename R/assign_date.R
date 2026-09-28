@@ -1,8 +1,8 @@
 #' assign_date
 #'
-#' @param x spatial data to complete date
-#' @param y nearest spatial data to get date
-#' @param date_col date column
+#' @param x An `sf` object. Features to which a date is assigned.
+#' @param y An `sf` object. Features with known dates, from which the nearest date is taken.
+#' @param date_col Character. Name of the date column in `y`.
 #'
 #' @returns
 #' compute the "new_date" column with a "date_distance" column

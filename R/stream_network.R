@@ -1,11 +1,11 @@
 #' stream_network
 #'
-#' @param facc path to d8 flow accumulation with extension
-#' @param fdir path to d8 flow direction with extension
-#' @param output path to stream network with extension
-#' @param thresholds thresholds to use for reclassification
-#' @param working_directory working directory
-#' @param remove_temp remove temporary data : reclass_file/reclass_nodata
+#' @param facc Character. Path to the D8 flow accumulation file (with extension).
+#' @param fdir Character. Path to the D8 flow direction file (with extension).
+#' @param output Character. Path to the stream network file (with extension).
+#' @param thresholds Numeric vector. Flow accumulation thresholds used to classify streams.
+#' @param working_directory Character. Working directory where temporary files are written.
+#' @param remove_temp Logical. If `TRUE`, temporary files (flow_acc_reclass_temp, flow_acc_reclass_nodata_temp) are deleted.
 #'
 #' @returns
 #' stream network

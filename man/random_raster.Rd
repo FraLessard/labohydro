@@ -7,11 +7,11 @@
 random_raster(raster, error, seed = 1)
 }
 \arguments{
-\item{raster}{reference raster}
+\item{raster}{A \code{SpatRaster}. Reference raster.}
 
-\item{error}{rmse of error to infer into raster}
+\item{error}{Numeric. RMSE of the random error.}
 
-\item{seed}{seed for reproducibility}
+\item{seed}{Integer. Random seed for reproducibility.}
 }
 \value{
 a random raster

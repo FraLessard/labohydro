@@ -14,17 +14,17 @@ watershed(
 )
 }
 \arguments{
-\item{facc}{path to flow accumulation with extension}
+\item{facc}{A \code{SpatRaster}. D8 flow accumulation.}
 
-\item{fdir}{path to flow direction with extension}
+\item{fdir}{A \code{SpatRaster}. D8 flow direction.}
 
-\item{pour_point}{path to pour point with extension}
+\item{pour_point}{An \code{sf} object. Pour points.}
 
-\item{output_directory}{working directory}
+\item{output_directory}{Character. Working directory where temporary files are written.}
 
-\item{snap_distance}{snap distance}
+\item{snap_distance}{Numeric. Maximum distance to snap pour points to the flow accumulation, in map units.}
 
-\item{remove_temp}{remove temporary data : facc_temp/fdir_temp/pour_point_temp/snap_pour_point_temp/watershed_raster_temp/watershed_polygon_temp}
+\item{remove_temp}{Logical. If \code{TRUE}, temporary files (facc_temp, fdir_temp, pour_point_temp, snap_pour_point_temp, watershed_raster_temp, watershed_polygon_temp) are deleted.}
 }
 \value{
 same watershed number as pour point

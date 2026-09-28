@@ -1,9 +1,9 @@
 #' Run a SAGA-GIS tool
 #'
-#' @param library library of SAGA-GIS / ex : "ta_morphometry"
-#' @param tool tool number / ex : "9"
-#' @param ... arguments / ex : "-DEM", paste0(wd, "/dem_filtered_breached_crop.sgrd"),
-#' @param saga_cmd SAGA-GIS path
+#' @param library Character. SAGA-GIS library (e.g. "ta_morphometry").
+#' @param tool Character. Tool number in the library (e.g. "9").
+#' @param ... Character. Tool arguments (e.g. "-DEM", "dem.sgrd").
+#' @param saga_cmd Character. Path to the SAGA-GIS command-line executable.
 #'
 #' @returns
 #' tool ouput

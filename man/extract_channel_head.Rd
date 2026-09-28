@@ -7,11 +7,11 @@
 extract_channel_head(channel, surveyed_area, tolerance)
 }
 \arguments{
-\item{channel}{channels}
+\item{channel}{An \code{sf} object. Channel lines.}
 
-\item{surveyed_area}{surveyed area}
+\item{surveyed_area}{An \code{sf} object. Surveyed area polygon.}
 
-\item{tolerance}{tolerance distance}
+\item{tolerance}{Numeric. Distance tolerance used to detect connected channels, in map units.}
 }
 \value{
 channel head

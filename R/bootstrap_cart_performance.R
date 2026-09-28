@@ -1,7 +1,7 @@
 #' bootstrap_cart_performance
 #'
-#' @param bootstrap_list a bootstrap list with tain/test data and model
-#' @param class variable name to test a.k.a. column
+#' @param bootstrap_list A `list`. Output of [bootstrap_cart()], with the model and train/test data of each iteration.
+#' @param class Character. Name of the response column to evaluate.
 #'
 #' @returns
 #' bootstrap performance table
