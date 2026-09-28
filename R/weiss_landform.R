@@ -18,16 +18,16 @@ weiss_landform <- function(tpi300,
                            scale_tpi2000 = 100,
                            slope) {
 
-  cond1 <- wtpi300 <= -(scale_tpi300) & wtpi2000 <= -(scale_tpi2000)
-  cond2 <- wtpi300 <= -(scale_tpi300) & wtpi2000 > -(scale_tpi2000) & wtpi2000 < (scale_tpi2000)
-  cond3 <- wtpi300 <= -(scale_tpi300) & wtpi2000 >= (scale_tpi2000)
-  cond4 <- wtpi300 > -(scale_tpi300) & wtpi300 < (scale_tpi300) & wtpi2000 <= -(scale_tpi2000)
-  cond5 <- wtpi300 > -(scale_tpi300) & wtpi300 < (scale_tpi300) & wtpi2000 > -(scale_tpi2000) & wtpi2000 < (scale_tpi2000) & slope <= 15
-  cond6 <- wtpi300 > -(scale_tpi300) & wtpi300 < (scale_tpi300) & wtpi2000 > -(scale_tpi2000) & wtpi2000 < (scale_tpi2000) & slope > 15
-  cond7 <- wtpi300 > -(scale_tpi300) & wtpi300 < (scale_tpi300) & wtpi2000 >= (scale_tpi2000)
-  cond8 <- wtpi300 >= (scale_tpi300) & wtpi2000 <= -(scale_tpi2000)
-  cond9 <- wtpi300 >= (scale_tpi300) & wtpi2000 > -(scale_tpi2000) & wtpi2000 < (scale_tpi2000)
-  cond10 <- wtpi300 >= (scale_tpi300) & wtpi2000 >= (scale_tpi2000)
+  cond1 <- tpi300 <= -(scale_tpi300) & tpi2000 <= -(scale_tpi2000)
+  cond2 <- tpi300 <= -(scale_tpi300) & tpi2000 > -(scale_tpi2000) & tpi2000 < (scale_tpi2000)
+  cond3 <- tpi300 <= -(scale_tpi300) & tpi2000 >= (scale_tpi2000)
+  cond4 <- tpi300 > -(scale_tpi300) & tpi300 < (scale_tpi300) & tpi2000 <= -(scale_tpi2000)
+  cond5 <- tpi300 > -(scale_tpi300) & tpi300 < (scale_tpi300) & tpi2000 > -(scale_tpi2000) & tpi2000 < (scale_tpi2000) & slope <= 15
+  cond6 <- tpi300 > -(scale_tpi300) & tpi300 < (scale_tpi300) & tpi2000 > -(scale_tpi2000) & tpi2000 < (scale_tpi2000) & slope > 15
+  cond7 <- tpi300 > -(scale_tpi300) & tpi300 < (scale_tpi300) & tpi2000 >= (scale_tpi2000)
+  cond8 <- tpi300 >= (scale_tpi300) & tpi2000 <= -(scale_tpi2000)
+  cond9 <- tpi300 >= (scale_tpi300) & tpi2000 > -(scale_tpi2000) & tpi2000 < (scale_tpi2000)
+  cond10 <- tpi300 >= (scale_tpi300) & tpi2000 >= (scale_tpi2000)
 
   landform <-
     cond1 * 1 +

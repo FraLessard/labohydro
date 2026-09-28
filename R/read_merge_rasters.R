@@ -18,7 +18,7 @@ read_merge_rasters <- function(path = getwd(),
   files <- stringr::str_subset(files, pattern)
 
   rasters <- purrr::map(files, terra::rast)
-  rasters <- terra::rast
+  rasters <- terra::rast(rasters)
 
   return(rasters)
 }
