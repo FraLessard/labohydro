@@ -1,14 +1,14 @@
 #' flow_acc_md8_iteration
 #'
-#' @param input path to digital elevation model with extension
-#' @param quantiles quantiles to computes. Use NULL to skip quantiles
-#' @param error lidar error
-#' @param n_iter number of iterations
-#' @param method flow accumulation algorithm: "md8" (whitebox::wbt_fd8_flow_accumulation)
-#' or "d8" (whitebox::wbt_d8_flow_accumulation)
-#' @param dispersion_statistics if TRUE, compute standard deviation (sd) and
-#' coefficient of variation (cv)
-#' @param working_directory working directory
+#' @param input Character. Path to the digital elevation model file (with extension).
+#' @param quantiles Numeric vector. Quantiles to compute, between 0 and 1. Use NULL to skip quantiles.
+#' @param error Numeric. RMSE of the LiDAR elevation error, in meters.
+#' @param n_iter Integer vector. Iteration numbers at which a result raster is written.
+#' @param method Character. Flow accumulation algorithm: "md8" (whitebox::wbt_fd8_flow_accumulation)
+#' or "d8" (whitebox::wbt_d8_flow_accumulation).
+#' @param dispersion_statistics Logical. If TRUE, compute the standard deviation (sd) and
+#' coefficient of variation (cv).
+#' @param working_directory Character. Working directory where temporary files are written.
 #'
 #' @returns
 #' a spatraster with multiple layers of flow accumulation distribution
