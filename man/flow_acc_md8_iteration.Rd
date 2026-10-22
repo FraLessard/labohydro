@@ -9,17 +9,25 @@ flow_acc_md8_iteration(
   quantiles = c(0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95),
   error = 0.16,
   n_iter = c(2, 5, 10, 50, 100, 500),
+  method = "md8",
+  dispersion_statistics = TRUE,
   working_directory = getwd()
 )
 }
 \arguments{
 \item{input}{path to digital elevation model with extension}
 
-\item{quantiles}{quantiles to computes}
+\item{quantiles}{quantiles to computes. Use NULL to skip quantiles}
 
 \item{error}{lidar error}
 
 \item{n_iter}{number of iterations}
+
+\item{method}{flow accumulation algorithm: "md8" (whitebox::wbt_fd8_flow_accumulation)
+or "d8" (whitebox::wbt_d8_flow_accumulation)}
+
+\item{dispersion_statistics}{if TRUE, compute standard deviation (sd) and
+coefficient of variation (cv)}
 
 \item{working_directory}{working directory}
 }
