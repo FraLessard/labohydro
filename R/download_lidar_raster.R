@@ -1,9 +1,9 @@
 #' download_lidar_raster
 #'
-#' @param index index in sf with download path : "lidar_url"
-#' @param tile tile number
-#' @param raster raster product : "MHC", "MNT", "MNT_Ombre", "Pentes"
-#' @param destination destination of raster
+#' @param index An `sf` object. Tile index with "feuillet" and "lidar_url" columns.
+#' @param tile Character. Tile name (e.g. "32B11NE").
+#' @param raster Character. Raster product: "MHC", "MNT", "MNT_Ombre" or "Pentes".
+#' @param destination Character. Directory where the file is downloaded.
 #'
 #' @returns
 #' path of downloaded raster

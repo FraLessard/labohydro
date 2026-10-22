@@ -7,7 +7,7 @@
 classification_hydrologique_mailhot_2018(x)
 }
 \arguments{
-\item{x}{a column of surface deposits from MELCCFP raster}
+\item{x}{Character vector. Surface deposit codes from the MELCCFP map.}
 }
 \value{
 hydrological classification

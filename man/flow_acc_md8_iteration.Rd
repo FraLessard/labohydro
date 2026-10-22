@@ -15,21 +15,21 @@ flow_acc_md8_iteration(
 )
 }
 \arguments{
-\item{input}{path to digital elevation model with extension}
+\item{input}{Character. Path to the digital elevation model file (with extension).}
 
-\item{quantiles}{quantiles to computes. Use NULL to skip quantiles}
+\item{quantiles}{Numeric vector. Quantiles to compute, between 0 and 1. Use NULL to skip quantiles.}
 
-\item{error}{lidar error}
+\item{error}{Numeric. RMSE of the LiDAR elevation error, in meters.}
 
-\item{n_iter}{number of iterations}
+\item{n_iter}{Integer vector. Iteration numbers at which a result raster is written.}
 
-\item{method}{flow accumulation algorithm: "md8" (whitebox::wbt_fd8_flow_accumulation)
-or "d8" (whitebox::wbt_d8_flow_accumulation)}
+\item{method}{Character. Flow accumulation algorithm: "md8" (whitebox::wbt_fd8_flow_accumulation)
+or "d8" (whitebox::wbt_d8_flow_accumulation).}
 
-\item{dispersion_statistics}{if TRUE, compute standard deviation (sd) and
-coefficient of variation (cv)}
+\item{dispersion_statistics}{Logical. If TRUE, compute the standard deviation (sd) and
+coefficient of variation (cv).}
 
-\item{working_directory}{working directory}
+\item{working_directory}{Character. Working directory where temporary files are written.}
 }
 \value{
 a spatraster with multiple layers of flow accumulation distribution

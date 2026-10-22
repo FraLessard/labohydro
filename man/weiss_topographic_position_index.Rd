@@ -7,11 +7,13 @@
 weiss_topographic_position_index(dem, inner_radius, outer_radius, round = TRUE)
 }
 \arguments{
-\item{dem}{digital elevation model}
+\item{dem}{A \code{SpatRaster}. Digital elevation model.}
 
-\item{inner_radius}{inner radius}
+\item{inner_radius}{Numeric. Inner radius of the annulus, in map units.}
 
-\item{outer_radius}{outer radius}
+\item{outer_radius}{Numeric. Outer radius of the annulus, in map units.}
+
+\item{round}{Logical. If \code{TRUE}, the index is rounded to the nearest integer.}
 }
 \value{
 Topographic position index from Weiss poster

@@ -1,8 +1,8 @@
 #' Run a arcpy tool
 #'
-#' @param script path of script
-#' @param ... arguments
-#' @param python_exe arcpy path
+#' @param script Character. Path to the Python script to run.
+#' @param ... Character. Arguments passed to the script.
+#' @param python_exe Character. Path to the ArcGIS Pro Python executable.
 #'
 #' @returns
 #' tool output

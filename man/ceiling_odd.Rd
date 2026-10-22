@@ -7,7 +7,7 @@
 ceiling_odd(x)
 }
 \arguments{
-\item{x}{a number}
+\item{x}{Numeric. Value to round up to the nearest odd integer.}
 }
 \value{
 ceiling_odd

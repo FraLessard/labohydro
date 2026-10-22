@@ -7,13 +7,13 @@
 getETP(tmin, tmax, ATnor, RE)
 }
 \arguments{
-\item{tmin}{tmin}
+\item{tmin}{Numeric vector. Daily minimum temperature, in °C.}
 
-\item{tmax}{tmax}
+\item{tmax}{Numeric vector. Daily maximum temperature, in °C.}
 
-\item{ATnor}{ATnor}
+\item{ATnor}{Numeric vector. Normal daily temperature range, from \code{\link[=getATnor]{getATnor()}}.}
 
-\item{RE}{RE}
+\item{RE}{Numeric vector. Extraterrestrial radiation, from \code{\link[=getRE]{getRE()}}.}
 }
 \value{
 ETP

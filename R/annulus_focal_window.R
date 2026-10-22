@@ -1,7 +1,7 @@
 #' annulus_focal_window
 #'
-#' @param inner_radius inner radius of annulus in number of cells
-#' @param outer_radius outer radius of annulus in number of cells
+#' @param inner_radius Numeric. Inner radius of the annulus, in number of cells.
+#' @param outer_radius Numeric. Outer radius of the annulus, in number of cells.
 #'
 #' @returns
 #' a matrix of annulus focal window

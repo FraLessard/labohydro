@@ -7,9 +7,9 @@
 bootstrap_cart_performance(bootstrap_list, class)
 }
 \arguments{
-\item{bootstrap_list}{a bootstrap list with tain/test data and model}
+\item{bootstrap_list}{A \code{list}. Output of \code{\link[=bootstrap_cart]{bootstrap_cart()}}, with the model and train/test data of each iteration.}
 
-\item{class}{variable name to test a.k.a. column}
+\item{class}{Character. Name of the response column to evaluate.}
 }
 \value{
 bootstrap performance table

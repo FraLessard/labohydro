@@ -1,11 +1,11 @@
 #' watershed
 #'
-#' @param facc path to flow accumulation with extension
-#' @param fdir path to flow direction with extension
-#' @param pour_point path to pour point with extension
-#' @param output_directory working directory
-#' @param snap_distance snap distance
-#' @param remove_temp remove temporary data : facc_temp/fdir_temp/pour_point_temp/snap_pour_point_temp/watershed_raster_temp/watershed_polygon_temp
+#' @param facc A `SpatRaster`. D8 flow accumulation.
+#' @param fdir A `SpatRaster`. D8 flow direction.
+#' @param pour_point An `sf` object. Pour points.
+#' @param output_directory Character. Working directory where temporary files are written.
+#' @param snap_distance Numeric. Maximum distance to snap pour points to the flow accumulation, in map units.
+#' @param remove_temp Logical. If `TRUE`, temporary files (facc_temp, fdir_temp, pour_point_temp, snap_pour_point_temp, watershed_raster_temp, watershed_polygon_temp) are deleted.
 #'
 #' @returns
 #' same watershed number as pour point

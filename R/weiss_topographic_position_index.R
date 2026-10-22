@@ -1,8 +1,9 @@
 #' Topographic position index from Weiss poster : https://www.jennessent.com/downloads/TPI-poster-TNC_18x22.pdf
 #'
-#' @param dem digital elevation model
-#' @param inner_radius inner radius
-#' @param outer_radius outer radius
+#' @param dem A `SpatRaster`. Digital elevation model.
+#' @param inner_radius Numeric. Inner radius of the annulus, in map units.
+#' @param outer_radius Numeric. Outer radius of the annulus, in map units.
+#' @param round Logical. If `TRUE`, the index is rounded to the nearest integer.
 #'
 #' @returns
 #' Topographic position index from Weiss poster

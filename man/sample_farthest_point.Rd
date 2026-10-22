@@ -7,13 +7,13 @@
 sample_farthest_point(nb, res, sampling_area, seed)
 }
 \arguments{
-\item{nb}{number of point to sample}
+\item{nb}{Integer. Number of points to sample.}
 
-\item{res}{resolution of raster to use for distance matrix}
+\item{res}{Numeric. Resolution of the raster used for distance calculations, in map units.}
 
-\item{sampling_area}{sampling area to cover}
+\item{sampling_area}{An \code{sf} object. Area to sample.}
 
-\item{seed}{seed for reproducibility}
+\item{seed}{Integer. Random seed for reproducibility.}
 }
 \value{
 nb number of point placed as far apart from each other as possible

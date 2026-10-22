@@ -1,7 +1,7 @@
 #' getRE
 #'
-#' @param date date
-#' @param latitude latitude
+#' @param date Date vector. Dates of the daily series.
+#' @param latitude Numeric. Latitude, in decimal degrees.
 #'
 #' @returns
 #' RE

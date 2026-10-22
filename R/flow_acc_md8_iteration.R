@@ -20,13 +20,11 @@ flow_acc_md8_iteration <- function(input,
                                    quantiles = c(0.05, 0.10, 0.25, 0.50, 0.75, 0.90, 0.95),
                                    error = 0.16,
                                    n_iter = c(2, 5, 10, 50, 100, 500),
-                                   method = "md8",
+                                   method = c("md8", "d8"),
                                    dispersion_statistics = TRUE,
                                    working_directory = getwd()){
 
-  if(!method %in% c("md8", "d8")){
-    stop("method must be 'md8' or 'd8'")
-  }
+  method <- match.arg(method)
 
   dem <- terra::rast(input)
 

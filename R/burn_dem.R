@@ -1,7 +1,7 @@
 #' burn_dem
 #'
-#' @param dem digital elevation model
-#' @param vect_sf vector to be burned into dem, usually culvert
+#' @param dem A `SpatRaster`. Digital elevation model.
+#' @param vect_sf An `sf` object. Line features to burn into `dem` (usually culverts).
 #'
 #' @returns
 #' burned dem

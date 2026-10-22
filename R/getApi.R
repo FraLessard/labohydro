@@ -1,9 +1,9 @@
 #' getApi
 #'
-#' @param x seq
-#' @param k k
-#' @param n number of data to use
-#' @param finite TRUE/FALSE
+#' @param x Numeric vector. Daily precipitation series.
+#' @param k Numeric. Decay constant, or vector of weights.
+#' @param n Integer. Number of previous days used when `finite = TRUE`.
+#' @param finite Logical. If `TRUE`, the index uses the last `n` days only; otherwise it is computed recursively over the whole series.
 #'
 #' @returns
 #' Api

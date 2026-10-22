@@ -1,6 +1,6 @@
 #' min_distances_nn
 #'
-#' @param sf_object an sf object
+#' @param sf_object An `sf` object. Features to compute distances between.
 #'
 #' @returns
 #' distance between an sf object and the closet one

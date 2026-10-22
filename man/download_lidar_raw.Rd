@@ -7,11 +7,11 @@
 download_lidar_raw(index, tile, destination = getwd())
 }
 \arguments{
-\item{index}{index in sf with download path : "file_url"}
+\item{index}{An \code{sf} object. Tile index with "NOM_TUILE" and "TELECHARGEMENT_TUILE" columns.}
 
-\item{tile}{tile number}
+\item{tile}{Character. Tile name (e.g. "32B11NE").}
 
-\item{destination}{destination of lidar data}
+\item{destination}{Character. Directory where the file is downloaded.}
 }
 \value{
 path of downloaded lidar data

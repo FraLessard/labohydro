@@ -1,6 +1,6 @@
 #' circle_focal_window
 #'
-#' @param radius radius of window
+#' @param radius Numeric. Radius of the circle, in number of cells.
 #'
 #' @returns
 #' a matrix of circle focal window

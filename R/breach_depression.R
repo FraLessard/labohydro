@@ -1,9 +1,9 @@
 #' breach_depression
 #'
-#' @param input path to digital elevation model with extension
-#' @param output path to digital elevation model breached with extension
-#' @param working_directory working directory
-#' @param remove_temp remove temporary data : fill scp/breach scp/breach lc
+#' @param input Character. Path to the digital elevation model file (with extension).
+#' @param output Character. Path to the breached digital elevation model file (with extension).
+#' @param working_directory Character. Working directory where temporary files are written.
+#' @param remove_temp Logical. If `TRUE`, temporary files (fill_scp, breach_scp, breach_lc) are deleted.
 #'
 #' @returns
 #' a dem with depressions breached

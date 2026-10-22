@@ -1,9 +1,9 @@
 #' display_pca
 #'
-#' @param data data frame
-#' @param color_variable variable to use for coloring
-#' @param point_size size of point
-#' @param label_size size of label
+#' @param data A `data.frame`. Numeric variables and the coloring variable.
+#' @param color_variable Character. Name of the column used to color the points.
+#' @param point_size Numeric. Size of the points.
+#' @param label_size Numeric. Size of the loading labels.
 #'
 #' @returns
 #' a nice and clean pca

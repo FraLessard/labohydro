@@ -1,8 +1,8 @@
 #' update_surveyed_area
 #'
-#' @param surveyed_area surveyed area in spatrast
-#' @param update_area update area in sf feature
-#' @param task task : "add" of "remove" area
+#' @param surveyed_area A `SpatRaster`. Surveyed area (1 = surveyed, 0 = not surveyed).
+#' @param update_area An `sf` object. Area to add or remove.
+#' @param task Character. Either "add" or "remove".
 #'
 #' @returns
 #' update surveyed area with 1 refer to surveyed area and 0 to non-surveyed area

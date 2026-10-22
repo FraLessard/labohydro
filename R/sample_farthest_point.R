@@ -1,9 +1,9 @@
 #' sample_farthest_point
 #'
-#' @param nb number of point to sample
-#' @param res resolution of raster to use for distance matrix
-#' @param sampling_area sampling area to cover
-#' @param seed seed for reproducibility
+#' @param nb Integer. Number of points to sample.
+#' @param res Numeric. Resolution of the raster used for distance calculations, in map units.
+#' @param sampling_area An `sf` object. Area to sample.
+#' @param seed Integer. Random seed for reproducibility.
 #'
 #' @returns
 #' nb number of point placed as far apart from each other as possible

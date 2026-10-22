@@ -1,9 +1,9 @@
 #' getATnor
 #'
-#' @param date date
-#' @param tmin tmin
-#' @param tmax tmax
-#' @param years year
+#' @param date Date vector. Dates of the daily series.
+#' @param tmin Numeric vector. Daily minimum temperature, in °C.
+#' @param tmax Numeric vector. Daily maximum temperature, in °C.
+#' @param years Integer. Number of previous years used to compute the normal.
 #'
 #' @returns
 #' ATnor

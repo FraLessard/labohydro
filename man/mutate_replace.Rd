@@ -7,13 +7,13 @@
 mutate_replace(x, col_name, old_value, new_value)
 }
 \arguments{
-\item{x}{a dataframe}
+\item{x}{A \code{data.frame}. Data in which values are replaced.}
 
-\item{col_name}{column name to replace value}
+\item{col_name}{Column name (unquoted) in which values are replaced.}
 
-\item{old_value}{old value}
+\item{old_value}{Vector. Values to replace.}
 
-\item{new_value}{new value}
+\item{new_value}{Replacement value.}
 }
 \value{
 a dataframe with replaced values inside the column

@@ -7,11 +7,11 @@
 update_surveyed_area(surveyed_area, update_area, task)
 }
 \arguments{
-\item{surveyed_area}{surveyed area in spatrast}
+\item{surveyed_area}{A \code{SpatRaster}. Surveyed area (1 = surveyed, 0 = not surveyed).}
 
-\item{update_area}{update area in sf feature}
+\item{update_area}{An \code{sf} object. Area to add or remove.}
 
-\item{task}{task : "add" of "remove" area}
+\item{task}{Character. Either "add" or "remove".}
 }
 \value{
 update surveyed area with 1 refer to surveyed area and 0 to non-surveyed area

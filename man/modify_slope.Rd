@@ -7,11 +7,11 @@
 modify_slope(slope, slope_weight, suction)
 }
 \arguments{
-\item{slope}{slope}
+\item{slope}{A \code{SpatRaster}. Slope.}
 
-\item{slope_weight}{slope weight}
+\item{slope_weight}{Numeric. Weight of the slope.}
 
-\item{suction}{suction}
+\item{suction}{Numeric. Suction parameter.}
 }
 \value{
 modified slope to modify flow accumulation

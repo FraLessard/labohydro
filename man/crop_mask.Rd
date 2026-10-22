@@ -7,13 +7,13 @@
 crop_mask(raster, polygon, transform = TRUE, method = "bilinear")
 }
 \arguments{
-\item{raster}{raster to clip}
+\item{raster}{A \code{SpatRaster}. Raster to crop and mask.}
 
-\item{polygon}{reference polygon}
+\item{polygon}{An \code{sf} object. Polygon used to crop and mask \code{raster}.}
 
-\item{transform}{transform crs of final raster TRUE/FALSE}
+\item{transform}{Logical. If \code{TRUE}, the output is projected to the CRS of \code{polygon}.}
 
-\item{method}{transformation method : "bilinear" for numeric raster and "near" for categorical raster}
+\item{method}{Character. Resampling method used when \code{transform = TRUE}: "bilinear" for continuous rasters or "near" for categorical rasters.}
 }
 \value{
 a raster with extent and mask of polygon

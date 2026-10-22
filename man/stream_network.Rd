@@ -14,17 +14,17 @@ stream_network(
 )
 }
 \arguments{
-\item{facc}{path to d8 flow accumulation with extension}
+\item{facc}{Character. Path to the D8 flow accumulation file (with extension).}
 
-\item{fdir}{path to d8 flow direction with extension}
+\item{fdir}{Character. Path to the D8 flow direction file (with extension).}
 
-\item{output}{path to stream network with extension}
+\item{output}{Character. Path to the stream network file (with extension).}
 
-\item{thresholds}{thresholds to use for reclassification}
+\item{thresholds}{Numeric vector. Flow accumulation thresholds used to classify streams.}
 
-\item{working_directory}{working directory}
+\item{working_directory}{Character. Working directory where temporary files are written.}
 
-\item{remove_temp}{remove temporary data : reclass_file/reclass_nodata}
+\item{remove_temp}{Logical. If \code{TRUE}, temporary files (flow_acc_reclass_temp, flow_acc_reclass_nodata_temp) are deleted.}
 }
 \value{
 stream network

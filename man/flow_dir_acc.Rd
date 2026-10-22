@@ -12,13 +12,13 @@ flow_dir_acc(
 )
 }
 \arguments{
-\item{input}{path to digital elevation model with extension}
+\item{input}{Character. Path to the digital elevation model file (with extension).}
 
-\item{output}{path to flow accumulation with extension}
+\item{output}{Character. Path to the flow accumulation file (with extension).}
 
-\item{working_directory}{working directory}
+\item{working_directory}{Character. Working directory where temporary files are written.}
 
-\item{remove_flowdir}{remove flow dir}
+\item{remove_flowdir}{Logical. If \code{TRUE}, the flow direction file (flow_dir) is deleted.}
 }
 \value{
 flow dir and acc

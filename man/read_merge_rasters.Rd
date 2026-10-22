@@ -7,9 +7,9 @@
 read_merge_rasters(path = getwd(), pattern)
 }
 \arguments{
-\item{path}{path to rasters}
+\item{path}{Character. Directory containing the rasters.}
 
-\item{pattern}{pattern of rasters to merge}
+\item{pattern}{Character. Regular expression used to select the rasters to merge.}
 }
 \value{
 a mutilayer spatraster

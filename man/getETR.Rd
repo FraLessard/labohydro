@@ -7,9 +7,9 @@
 getETR(ETP, rain)
 }
 \arguments{
-\item{ETP}{ETP}
+\item{ETP}{Numeric vector. Daily potential evapotranspiration, from \code{\link[=getETP]{getETP()}}.}
 
-\item{rain}{rain}
+\item{rain}{Numeric vector. Daily rainfall, in mm.}
 }
 \value{
 ETR

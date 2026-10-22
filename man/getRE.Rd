@@ -7,9 +7,9 @@
 getRE(date, latitude)
 }
 \arguments{
-\item{date}{date}
+\item{date}{Date vector. Dates of the daily series.}
 
-\item{latitude}{latitude}
+\item{latitude}{Numeric. Latitude, in decimal degrees.}
 }
 \value{
 RE

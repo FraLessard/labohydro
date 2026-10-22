@@ -7,13 +7,13 @@
 display_pca(data, color_variable, point_size, label_size)
 }
 \arguments{
-\item{data}{data frame}
+\item{data}{A \code{data.frame}. Numeric variables and the coloring variable.}
 
-\item{color_variable}{variable to use for coloring}
+\item{color_variable}{Character. Name of the column used to color the points.}
 
-\item{point_size}{size of point}
+\item{point_size}{Numeric. Size of the points.}
 
-\item{label_size}{size of label}
+\item{label_size}{Numeric. Size of the loading labels.}
 }
 \value{
 a nice and clean pca

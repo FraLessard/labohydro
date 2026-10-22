@@ -1,7 +1,7 @@
 #' read_merge_rasters
 #'
-#' @param path path to rasters
-#' @param pattern pattern of rasters to merge
+#' @param path Character. Directory containing the rasters.
+#' @param pattern Character. Regular expression used to select the rasters to merge.
 #'
 #' @returns
 #' a mutilayer spatraster
@@ -18,7 +18,7 @@ read_merge_rasters <- function(path = getwd(),
   files <- stringr::str_subset(files, pattern)
 
   rasters <- purrr::map(files, terra::rast)
-  rasters <- terra::rast
+  rasters <- terra::rast(rasters)
 
   return(rasters)
 }

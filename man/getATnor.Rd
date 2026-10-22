@@ -7,13 +7,13 @@
 getATnor(date, tmin, tmax, years = 30)
 }
 \arguments{
-\item{date}{date}
+\item{date}{Date vector. Dates of the daily series.}
 
-\item{tmin}{tmin}
+\item{tmin}{Numeric vector. Daily minimum temperature, in °C.}
 
-\item{tmax}{tmax}
+\item{tmax}{Numeric vector. Daily maximum temperature, in °C.}
 
-\item{years}{year}
+\item{years}{Integer. Number of previous years used to compute the normal.}
 }
 \value{
 ATnor

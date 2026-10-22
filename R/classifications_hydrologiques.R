@@ -1,7 +1,7 @@
 #' classification_hydrologique_labo_hydro_3classes_ecofor
 #'
-#' @param x DEP_SUR column of ecoforestry
-#' @param y CO_TER column of ecoforestry
+#' @param x Character vector. Surface deposit codes (DEP_SUR column) from the ecoforestry map.
+#' @param y Character vector. Terrain codes (CO_TER column) from the ecoforestry map.
 #'
 #' @returns
 #' hydrological classification
@@ -38,7 +38,7 @@ classification_hydrologique_labo_hydro_3classes_ecofor <- function(x, # Depots d
 
 #' classification_hydrologique_labo_hydro_3classes
 #'
-#' @param x a column of surface deposits from MELCCFP raster
+#' @param x Character vector. Surface deposit codes from the MELCCFP map.
 #'
 #' @returns
 #' hydrological classification
@@ -146,7 +146,7 @@ classification_hydrologique_labo_hydro_3classes <- function(x){ # Depots de surf
 
 #' classification_hydrologique_labo_hydro_4classes
 #'
-#' @param x a column of surface deposits from MELCCFP raster
+#' @param x Character vector. Surface deposit codes from the MELCCFP map.
 #'
 #' @returns
 #' hydrological classification
@@ -254,7 +254,7 @@ classification_hydrologique_labo_hydro_4classes <- function(x){ # Depots de surf
 
 #' classification_hydrologique_radf
 #'
-#' @param x a column of surface deposits from MELCCFP raster
+#' @param x Character vector. Surface deposit codes from the MELCCFP map.
 #'
 #' @returns
 #' hydrological classification
@@ -362,7 +362,7 @@ classification_hydrologique_radf <- function(x){ # Depots de surface du MELCCFP
 
 #' classification_hydrologique_mailhot_2018
 #'
-#' @param x a column of surface deposits from MELCCFP raster
+#' @param x Character vector. Surface deposit codes from the MELCCFP map.
 #'
 #' @returns
 #' hydrological classification
@@ -471,7 +471,7 @@ classification_hydrologique_mailhot_2018 <- function(x){ # Depots de surface du 
 
 #' classification_hydrologique_simplify_v1
 #'
-#' @param x a column of surface deposits from MELCCFP raster
+#' @param x Character vector. Surface deposit codes from the MELCCFP map.
 #'
 #' @returns
 #' hydrological classification
@@ -580,7 +580,7 @@ classification_hydrologique_simplify_v1 <- function(x){ # Depots de surface du M
 
 #' classification_hydrologique_simplify_v2
 #'
-#' @param x a column of surface deposits from MELCCFP raster
+#' @param x Character vector. Surface deposit codes from the MELCCFP map.
 #'
 #' @returns
 #' hydrological classification

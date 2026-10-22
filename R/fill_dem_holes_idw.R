@@ -1,10 +1,10 @@
 #' fill_dem_holes_idw
 #'
-#' @param dem path to digital elevation model with extension
-#' @param output path to digital elevation model filled with extension
-#' @param working_directory working directory
-#' @param idw_power idw power
-#' @param remove_temp remove temporary data : dem file
+#' @param dem A `SpatRaster`. Digital elevation model.
+#' @param output Character. Path to the filled digital elevation model file (with extension).
+#' @param working_directory Character. Working directory where temporary files are written.
+#' @param idw_power Numeric. Power of the inverse distance weighting.
+#' @param remove_temp Logical. If `TRUE`, temporary files (dem_input_temp, inner_holes_mask, dem_inner_idw_fill_temp) are deleted.
 #'
 #' @returns
 #' a dem with no data filled
